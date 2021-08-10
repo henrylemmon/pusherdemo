@@ -2,17 +2,18 @@
 
 namespace Database\Seeders;
 
+use App\Models\Card;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class CardsTableSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-        $this->call(CardsTableSeeder::class);
+        Card::factory(10)->create();
     }
 }
