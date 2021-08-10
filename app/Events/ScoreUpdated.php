@@ -33,7 +33,7 @@ class ScoreUpdated implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('leaderboard');
+        return new Channel('leaderboard');
     }
 
     public function broadcastWith()
